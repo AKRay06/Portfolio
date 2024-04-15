@@ -1,0 +1,183 @@
+* {
+  transition: all ease 1s;
+}
+
+body {
+    background: #000;
+    background-image: url("tom-the-photographer-8f3PAgbaSpw-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  .text-style {
+    font: normal bold 50px/72px;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  .head-text {
+    color: aqua;
+    text-align: center;
+    margin-bottom: 30px;
+    text-decoration-style: wavy;
+    font-size: 40px;
+  }
+
+
+  /* Education Area starts */
+
+  .responsive {
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media screen and (max-width:400px) {
+    .img-logo {
+        margin-left: 5vw;
+    }
+
+    .text_container h3, .text_container h5 {
+        text-align: center;
+    }
+  }
+
+  /* Education Area ends */
+  
+
+  /* Footer Area Starts */
+    .footer-content {
+        max-width: 60vw;
+        max-height: 1.5vh;
+        background: white;
+    }
+
+    .footer-img {
+        margin: 0cm;
+        padding-bottom: 0cm;
+    }
+
+    .footer-content .row {
+        margin: 0px;
+        padding: 2px;
+    }
+
+    .footer-icons  {
+        font-size: 30px;
+        padding: 2rem;
+        color: aqua;        
+    }
+
+    .footer-icons>i {
+        padding: 5px;
+        margin-left: 5px;
+    }
+
+    .footer-text {
+        color: whitesmoke;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0cm;
+        padding: 0cm;
+    }
+
+    .copyrights {
+        margin-top: 0cm;
+        color: whitesmoke;
+        text-align: center;
+    }
+
+    @media screen and (max-width:576px) {
+        .footer-icons {
+            text-align: center;
+        }
+    }
+
+    .back-to-top {
+        font-size: 25px;
+        padding: 2rem;
+        color: rgb(125, 240, 240);
+        padding: px;
+        margin-left: 5px;
+        margin-bottom: 10px;
+    } 
+
+  /* Footer Area Ends */
+
+  /* Navbar Area Starts */
+
+  a[href="education.html"] {
+    font-weight: 700 !important;
+    color: rgb(255, 0, 21) !important;
+    background-color: antiquewhite !important;
+  }
+
+  .p-head {
+      font-size: 20px;
+  }
+
+ .vertical-nav {
+    min-width: 14rem;
+    width: 14rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s;
+  }
+  .page-content {
+    width: calc(100% - 17rem);
+    margin-left: 17rem;
+    transition: all 0.4s;
+  } 
+  
+  #sidebar.active {
+    margin-left: -17rem;
+  }
+  
+  #content.active {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .separator {
+    margin: 3rem 0;
+    border-bottom: 1px dashed #fff;
+  }
+  
+  .text-uppercase {
+    letter-spacing: 0.1em;
+  }
+  .text-gray {
+    color: #aaa;
+  }
+  
+  .nav-link{
+      text-transform: capitalize;
+  }
+  .nav-link:hover{
+      background:#f3f2f2;
+  }
+  .text-primary{
+      color:#7579e7 !important;
+  }
+
+  @media (max-width: 768px) {
+    #sidebar {
+      margin-left: -17rem;
+    }
+    #sidebar.active {
+      margin-left: 0;
+    }
+    #content {
+      width: 100%;
+      margin: 0;
+    }
+    #content.active {
+      margin-left: 17rem;
+      width: calc(100% - 17rem);
+    }
+  }
+
+  /* Navbar Area Ends */
